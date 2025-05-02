@@ -59,42 +59,42 @@ export const Header = component$(() => {
             <Link
               href="/"
               class="text-sm font-medium hover:text-primary transition-colors"
-              onClick$={() => (isMenuOpen.value = false)}
+              onClick$={() => setTimeout(() => (isMenuOpen.value = false), 100)}
             >
               Inicio
             </Link>
             <Link
               href="/obras"
               class="text-sm font-medium hover:text-primary transition-colors"
-              onClick$={() => (isMenuOpen.value = false)}
+              onClick$={() => setTimeout(() => (isMenuOpen.value = false), 100)}
             >
               Obras
             </Link>
             <Link
               href="/cursos"
               class="text-sm font-medium hover:text-primary transition-colors"
-              onClick$={() => (isMenuOpen.value = false)}
+              onClick$={() => setTimeout(() => (isMenuOpen.value = false), 100)}
             >
               Cursos
             </Link>
             <Link
               href="/talleres"
               class="text-sm font-medium hover:text-primary transition-colors"
-              onClick$={() => (isMenuOpen.value = false)}
+              onClick$={() => setTimeout(() => (isMenuOpen.value = false), 100)}
             >
               Talleres
             </Link>
             <Link
               href="/sobre-mi"
               class="text-sm font-medium hover:text-primary transition-colors"
-              onClick$={() => (isMenuOpen.value = false)}
+              onClick$={() => setTimeout(() => (isMenuOpen.value = false), 100)}
             >
               Sobre Mí
             </Link>
             <Link
               href="/contacto"
               class="text-sm font-medium hover:text-primary transition-colors"
-              onClick$={() => (isMenuOpen.value = false)}
+              onClick$={() => setTimeout(() => (isMenuOpen.value = false), 100)}
             >
               Contacto
             </Link>

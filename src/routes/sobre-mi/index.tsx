@@ -1,14 +1,14 @@
 import { component$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
 import { Button } from "~/components/ui";
-import PortadaImg from "~/media/portada.jpeg?jsx";
+import JuanImg from "~/media/personal/juan.webp?jsx";
 
 export default component$(() => {
   return (
     <div class="container mx-auto px-4 py-16 fade-in watercolor-bg min-h-screen">
       <h1 class="font-playfair text-4xl md:text-5xl font-bold mb-8 text-center scale-hover">Sobre mí</h1>
       <div class="flex flex-col md:flex-row gap-8 items-center max-w-4xl mx-auto mb-12 fade-in">
-        <PortadaImg class="rounded-3xl shadow-xl w-full md:w-1/2 scale-hover transition-all" />
+        <JuanImg class="rounded-3xl shadow-xl w-full md:w-1/2 scale-hover transition-all" />
         <div>
           <h2 class="font-playfair text-2xl font-semibold mb-4 scale-hover">Juan J. D. Antilef</h2>
           <p class="text-lg text-muted-foreground mb-4 fade-in">

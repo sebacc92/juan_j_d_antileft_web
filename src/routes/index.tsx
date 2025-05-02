@@ -194,14 +194,9 @@ export default component$(() => {
             <p class="text-lg mb-6 fade-in">Algunos cursos en los que podrás participar:</p>
             <div class="grid grid-cols-2 md:grid-cols-6 gap-4 max-w-4xl mx-auto mb-8">
               {[1, 2, 3, 4, 5, 6].map((item) => (
-                <div key={item} class="aspect-square rounded-lg overflow-hidden scale-hover fade-in transition-all">
-                  <img
-                    src={`/placeholder.svg?height=150&width=150`}
-                    alt={`Curso de acuarela ${item}`}
-                    width={150}
-                    height={150}
-                    class="object-cover w-full h-full"
-                  />
+                <div key={item} class="aspect-square rounded-lg overflow-hidden scale-hover fade-in transition-all flex flex-col items-center justify-center bg-muted">
+                  <PortadaImg class="object-cover w-full h-full" />
+                  <span class="text-xs mt-2 text-muted-foreground">Curso de acuarela {item}</span>
                 </div>
               ))}
             </div>

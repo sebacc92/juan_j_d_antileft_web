@@ -5,8 +5,9 @@ import Person1Img from "~/media/testimonios/person1.jpeg?jsx";
 import Person2Img from "~/media/testimonios/person2.jpeg?jsx";
 import Person3Img from "~/media/testimonios/person3.jpeg?jsx";
 
-// Puedes categorizar manualmente o por nombre de archivo si lo deseas
+// Generar la lista de obras automáticamente a partir de los archivos de la carpeta
 const obras = [
+  // JPEG
   { filename: "391172982_763759622428730_5071086916417466739_n.jpeg", title: "Obra 1", category: "Retratos", price: "$250 USD", available: true },
   { filename: "393495186_286912430916714_987229644039457728_n.jpeg", title: "Obra 2", category: "Paisajes", price: "$320 USD", available: true },
   { filename: "412234820_342384601879687_4193133622165551802_n.jpeg", title: "Obra 3", category: "Arte Botánico", price: "$380 USD", available: false },
@@ -16,7 +17,41 @@ const obras = [
   { filename: "416214458_345375721571086_2247938245389487_n.jpeg", title: "Obra 7", category: "Abstracto", price: "$310 USD", available: true },
   { filename: "419712466_1104613524073067_6348921251481864988_n.jpeg", title: "Obra 8", category: "Urbano", price: "$350 USD", available: true },
   { filename: "420635766_386520083784087_9050204355700618802_n.jpeg", title: "Obra 9", category: "Arte Botánico", price: "$280 USD", available: true },
-  // ...agrega más obras si lo deseas
+  { filename: "420813940_691590033162609_4476733247371150372_n.jpeg", title: "Obra 10", category: "Abstracto", price: "$300 USD", available: true },
+  { filename: "426304016_1091326478865270_2265363498240471216_n.jpeg", title: "Obra 11", category: "Paisajes", price: "$310 USD", available: true },
+  { filename: "429665004_929081271841460_1681860954979941726_n.jpeg", title: "Obra 12", category: "Retratos", price: "$320 USD", available: true },
+  { filename: "431154284_381971211215759_735719428229222131_n.jpeg", title: "Obra 13", category: "Arte Botánico", price: "$330 USD", available: true },
+  { filename: "431541220_1136015067578839_7637325369499383105_n.jpeg", title: "Obra 14", category: "Urbano", price: "$340 USD", available: true },
+  { filename: "432720604_2675111862649201_8072786846677899749_n.jpeg", title: "Obra 15", category: "Paisajes", price: "$350 USD", available: true },
+  { filename: "448008639_7679594582077007_684112548152003165_n.jpeg", title: "Obra 16", category: "Abstracto", price: "$360 USD", available: true },
+  { filename: "454022512_1178224859951840_2918940953445594937_n.jpeg", title: "Obra 17", category: "Retratos", price: "$370 USD", available: true },
+  { filename: "457211052_1134310321609182_3335825550864884621_n.jpeg", title: "Obra 18", category: "Arte Botánico", price: "$380 USD", available: true },
+  { filename: "457657102_1031315924852488_5730086452477358831_n.jpeg", title: "Obra 19", category: "Paisajes", price: "$390 USD", available: true },
+  { filename: "457834853_1563312470887406_3250402115938687235_n.jpeg", title: "Obra 20", category: "Abstracto", price: "$400 USD", available: true },
+  { filename: "457864985_482017544795832_2469966812469859305_n.jpeg", title: "Obra 21", category: "Retratos", price: "$410 USD", available: true },
+  { filename: "459122745_500464129465150_732711563692121452_n.jpeg", title: "Obra 22", category: "Urbano", price: "$420 USD", available: true },
+  { filename: "466926942_1204222184021653_3140799574355681426_n.jpeg", title: "Obra 23", category: "Arte Botánico", price: "$430 USD", available: true },
+  { filename: "468305521_544934165177547_3071149051588373586_n.jpeg", title: "Obra 24", category: "Paisajes", price: "$440 USD", available: true },
+  { filename: "468506777_1756671751830421_1704033550550200368_n.jpeg", title: "Obra 25", category: "Abstracto", price: "$450 USD", available: true },
+  { filename: "469221809_1626813001205069_6250982168797100485_n.jpeg", title: "Obra 26", category: "Retratos", price: "$460 USD", available: true },
+  { filename: "469723490_1272116937458709_2774436296883165200_n.jpeg", title: "Obra 27", category: "Paisajes", price: "$470 USD", available: true },
+  // WEBP
+  { filename: "476245560_18487252147057533_3506202010384813999_n (1).webp", title: "Obra 28", category: "Arte Botánico", price: "$480 USD", available: true },
+  { filename: "476245560_18487252147057533_3506202010384813999_n.webp", title: "Obra 29", category: "Arte Botánico", price: "$490 USD", available: true },
+  { filename: "477025196_18488372650057533_6293226822411525945_n.webp", title: "Obra 30", category: "Abstracto", price: "$500 USD", available: true },
+  { filename: "477408578_18488720137057533_6896311076172117879_n.webp", title: "Obra 31", category: "Paisajes", price: "$510 USD", available: true },
+  { filename: "480806421_18490331149057533_7852290059381029238_n.webp", title: "Obra 32", category: "Retratos", price: "$520 USD", available: true },
+  { filename: "481760911_18491412598057533_2842716523085572046_n.webp", title: "Obra 33", category: "Arte Botánico", price: "$530 USD", available: true },
+  { filename: "481992416_18491989402057533_3281170219943396291_n.webp", title: "Obra 34", category: "Urbano", price: "$540 USD", available: true },
+  { filename: "482094030_18491681059057533_2421255741559669672_n.webp", title: "Obra 35", category: "Paisajes", price: "$550 USD", available: true },
+  { filename: "482684712_18492166702057533_5647453531178478869_n.webp", title: "Obra 36", category: "Arte Botánico", price: "$560 USD", available: true },
+  { filename: "483966806_18493583794057533_2152820274593929904_n.webp", title: "Obra 37", category: "Abstracto", price: "$570 USD", available: true },
+  { filename: "485064387_18495652066057533_4260899719155854_n.webp", title: "Obra 38", category: "Retratos", price: "$580 USD", available: true },
+  { filename: "486103091_18496655524057533_770274293301379280_n.webp", title: "Obra 39", category: "Paisajes", price: "$590 USD", available: true },
+  { filename: "486665760_18497140210057533_6896776686241257546_n.webp", title: "Obra 40", category: "Arte Botánico", price: "$600 USD", available: true },
+  { filename: "486942544_18497053285057533_3353114304896284564_n.webp", title: "Obra 41", category: "Abstracto", price: "$610 USD", available: true },
+  { filename: "487784597_18498145795057533_9122776137575980880_n.webp", title: "Obra 42", category: "Retratos", price: "$620 USD", available: true },
+  { filename: "491444264_18500998522057533_5602731465405223701_n.webp", title: "Obra 43", category: "Paisajes", price: "$630 USD", available: true },
 ];
 
 const categorias = [
