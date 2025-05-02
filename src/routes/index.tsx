@@ -1,5 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
+import { LuComputer, LuLaptop, LuPhone, LuSmartphone, LuTablet } from "@qwikest/icons/lucide";
 import { Button } from "~/components/ui";
 import PortadaImg from "~/media/portada.jpeg?jsx";
 import Person1Img from "~/media/testimonios/person1.jpeg?jsx";
@@ -15,17 +16,17 @@ export default component$(() => {
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
               <h1 class="font-playfair text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-                Juan J. D. Antilef – Artista Visual
+                Artista Visual
               </h1>
               <p class="text-lg md:text-xl mb-8 text-muted-foreground">
                 Pintura, dibujo y escultura en diálogo. Obras que exploran lo simbólico, lo onírico y la realidad de animales y personas, sobre madera y otros soportes.
               </p>
               <div class="flex flex-col sm:flex-row gap-4">
-                <Link href="/cursos" class="btn btn-primary rounded-full text-lg px-8 py-3 text-center">
-                  <Button look="primary">Explorar Cursos</Button>
+                <Link href="/cursos" class="btn btn-primary text-lg px-8 py-3 text-center">
+                  <Button look="primary" class="rounded-full">Explorar Cursos</Button>
                 </Link>
                 <Link href="/obras" class="btn btn-outline rounded-full text-lg px-8 py-3 text-center">
-                  <Button look="secondary">Ver Galería</Button>
+                  <Button look="outline" class="rounded-full">Ver Galería</Button>
                 </Link>
               </div>
             </div>
@@ -103,13 +104,13 @@ export default component$(() => {
             </p>
             <div class="flex justify-center gap-4">
               <div class="w-20 h-20 flex items-center justify-center">
-                <img src="/placeholder.svg?height=80&width=80" alt="Computadora" width={80} height={80} />
+                <LuLaptop style={{ height: "300px", width: "300px" }} />
               </div>
               <div class="w-20 h-20 flex items-center justify-center">
-                <img src="/placeholder.svg?height=80&width=80" alt="Tablet" width={80} height={80} />
+                <LuTablet style={{ height: "300px", width: "300px" }} />
               </div>
               <div class="w-20 h-20 flex items-center justify-center">
-                <img src="/placeholder.svg?height=80&width=80" alt="Smartphone" width={80} height={80} />
+                <LuSmartphone style={{ height: "300px", width: "300px" }} />
               </div>
             </div>
           </div>
@@ -231,7 +232,9 @@ export default component$(() => {
             Únete a la comunidad y explora el mundo de la acuarela y las artes visuales con la guía de Juan Antilef.
           </p>
           <Link href="/cursos" class="btn btn-primary rounded-full text-lg px-8 py-3">
-            Ver todos los cursos
+            <Button look="outline">
+              Ver todos los cursos
+            </Button>
           </Link>
         </div>
       </section>
