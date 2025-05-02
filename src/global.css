@@ -4,68 +4,69 @@
 
 @layer base {
     :root {
-      --background: 0 0% 100%;
+      /* Paleta cálida y artística */
+      --background: 38 60% 98%; /* beige claro */
       --foreground: 240 5.9% 10%;
-      --muted: 240 4.8% 95.9%;
+      --muted: 38 40% 92%;
       --muted-foreground: 240 3.8% 46.1%;
       --popover: 0 0% 100%;
       --popover-foreground: 240 5.9% 10%;
       --card: 0 0% 100%;
       --card-foreground: 240 5.9% 10%;
-      --border: 240 5.9% 90%;
-      --input: 240 5.9% 90%;
-      --primary: 0 93.5% 81.8%;
-      --primary-foreground: 0 0% 0%;
-      --secondary: 240 5.9% 10%;
-      --secondary-foreground: 0 0% 100%;
-      --accent: 240 4.8% 95.9%;
+      --border: 38 30% 85%;
+      --input: 38 30% 85%;
+      --primary: 18 90% 65%; /* naranja artístico */
+      --primary-foreground: 0 0% 100%;
+      --secondary: 200 60% 85%; /* celeste acuarela */
+      --secondary-foreground: 240 5.9% 10%;
+      --accent: 140 40% 85%; /* verde suave */
       --accent-foreground: 240 5.9% 10%;
       --alert: 0 84.2% 60.2%;
       --alert-foreground: 0 0% 98%;
-      --ring: 240 5.9% 10%;
+      --ring: 18 90% 65%;
       --border-width: 0px;
-      --border-radius: 0.5rem;
-      --shadow-base: 0 1px 2px 0 rgba(0, 0, 0, 0.01);
-      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-      --shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0px rgba(0, 0, 0, 0.1);
-      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
-      --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-      --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 1);
-      --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.01);
-      --transform-press: scale(0.95);
+      --border-radius: 1rem;
+      --shadow-base: 0 2px 8px 0 rgba(0, 0, 0, 0.04);
+      --shadow-sm: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+      --shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.10), 0 2px 8px 0px rgba(0, 0, 0, 0.08);
+      --shadow-md: 0 8px 24px -2px rgba(0, 0, 0, 0.12), 0 4px 12px -4px rgba(0, 0, 0, 0.10);
+      --shadow-lg: 0 16px 32px -4px rgba(0, 0, 0, 0.12), 0 8px 20px -8px rgba(0, 0, 0, 0.10);
+      --shadow-xl: 0 32px 48px -8px rgba(0, 0, 0, 0.10), 0 16px 24px -12px rgba(0, 0, 0, 0.08);
+      --shadow-2xl: 0 40px 80px -16px rgba(0, 0, 0, 0.12);
+      --shadow-inner: inset 0 2px 8px 0 rgba(0, 0, 0, 0.03);
+      --transform-press: scale(0.97);
     }
     .dark {
-      --background: 240 10% 3.9%;
+      --background: 240 10% 8%;
       --foreground: 0 0% 98%;
       --muted: 240 3.7% 15.9%;
       --muted-foreground: 240 5% 64.9%;
       --popover: 240 10% 3.9%;
       --popover-foreground: 0 0% 98%;
-      --card: 240 10% 3.9%;
+      --card: 240 10% 10%;
       --card-foreground: 0 0% 98%;
-      --border: 240 3.7% 15.9%;
-      --input: 240 3.7% 15.9%;
-      --primary: 0 93.5% 81.8%;
-      --primary-foreground: 0 0% 0%;
-      --secondary: 240 4.8% 95.9%;
-      --secondary-foreground: 0 0% 0%;
-      --accent: 240 3.7% 15.9%;
-      --accent-foreground: 0 0% 98%;
+      --border: 240 3.7% 25%;
+      --input: 240 3.7% 25%;
+      --primary: 18 90% 65%;
+      --primary-foreground: 0 0% 100%;
+      --secondary: 200 60% 30%;
+      --secondary-foreground: 0 0% 100%;
+      --accent: 140 40% 30%;
+      --accent-foreground: 0 0% 100%;
       --alert: 0 84.2% 60.2%;
       --alert-foreground: 0 0% 98%;
-      --ring: 240 4.9% 83.9%;
+      --ring: 18 90% 65%;
       --border-width: 0px;
-      --border-radius: 0.5rem;
-      --shadow-base: 0 1px 2px 0 rgba(0, 0, 0, 0.01);
-      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-      --shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0px rgba(0, 0, 0, 0.1);
-      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
-      --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-      --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 1);
-      --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.01);
-      --transform-press: scale(0.95);
+      --border-radius: 1rem;
+      --shadow-base: 0 2px 8px 0 rgba(0, 0, 0, 0.10);
+      --shadow-sm: 0 2px 8px 0 rgba(0, 0, 0, 0.16);
+      --shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.18), 0 2px 8px 0px rgba(0, 0, 0, 0.16);
+      --shadow-md: 0 8px 24px -2px rgba(0, 0, 0, 0.20), 0 4px 12px -4px rgba(0, 0, 0, 0.18);
+      --shadow-lg: 0 16px 32px -4px rgba(0, 0, 0, 0.22), 0 8px 20px -8px rgba(0, 0, 0, 0.20);
+      --shadow-xl: 0 32px 48px -8px rgba(0, 0, 0, 0.18), 0 16px 24px -12px rgba(0, 0, 0, 0.16);
+      --shadow-2xl: 0 40px 80px -16px rgba(0, 0, 0, 0.22);
+      --shadow-inner: inset 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+      --transform-press: scale(0.97);
     }
 }
 
@@ -90,19 +91,62 @@
     --color-card-foreground: hsl(var(--card-foreground));
     --color-popover: hsl(var(--popover));
     --color-popover-foreground: hsl(var(--popover-foreground));
-    --border-radius: 0.5rem;
+    --border-radius: 1rem;
     --border-width: 0px;
-    --shadow-base: 0 1px 2px 0 rgba(0, 0, 0, 0.01);
-    --shadow-xs: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
-    --shadow-sm: 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 1px 5px 0px rgba(0, 0, 0, 0.1);
-    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
-    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
-    --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 1);
-    --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.01);
-    --transform-press: scale(0.95);
+    --shadow-base: 0 2px 8px 0 rgba(0, 0, 0, 0.04);
+    --shadow-xs: 0 2px 8px 0 rgba(0, 0, 0, 0.08);
+    --shadow-sm: 0 4px 16px 0 rgba(0, 0, 0, 0.10), 0 2px 8px 0px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 8px 24px -2px rgba(0, 0, 0, 0.12), 0 4px 12px -4px rgba(0, 0, 0, 0.10);
+    --shadow-lg: 0 16px 32px -4px rgba(0, 0, 0, 0.12), 0 8px 20px -8px rgba(0, 0, 0, 0.10);
+    --shadow-xl: 0 32px 48px -8px rgba(0, 0, 0, 0.10), 0 16px 24px -12px rgba(0, 0, 0, 0.08);
+    --shadow-2xl: 0 40px 80px -16px rgba(0, 0, 0, 0.12);
+    --shadow-inner: inset 0 2px 8px 0 rgba(0, 0, 0, 0.03);
+    --transform-press: scale(0.97);
 }
 
 @utility press {
     transform: var(--transform-press);
+}
+
+/* Animaciones y transiciones globales */
+@layer utilities {
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+  }
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+  .scale-hover {
+    transition: transform 0.3s cubic-bezier(.4,0,.2,1), box-shadow 0.3s cubic-bezier(.4,0,.2,1);
+  }
+  .scale-hover:hover {
+    transform: scale(1.04);
+    box-shadow: var(--shadow-lg);
+  }
+  /* Efecto especial para títulos: solo escalado, sin sombra */
+  h1.scale-hover:hover,
+  h2.scale-hover:hover,
+  h3.scale-hover:hover {
+    box-shadow: none !important;
+    background: none !important;
+    transform: scale(1.04);
+  }
+  .btn-animated {
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+  }
+  .btn-animated:active {
+    transform: scale(0.97);
+  }
+  .watercolor-bg {
+    background: linear-gradient(120deg, hsl(38, 60%, 98%) 0%, hsl(200, 60%, 95%) 100%);
+    background-attachment: fixed;
+  }
+  .section-divider {
+    height: 4px;
+    width: 80px;
+    background: linear-gradient(90deg, hsl(18, 90%, 65%), hsl(200, 60%, 85%));
+    border-radius: 2px;
+    margin: 2rem auto;
+  }
 }
