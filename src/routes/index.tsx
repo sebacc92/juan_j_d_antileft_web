@@ -1,11 +1,12 @@
 import { component$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
-import { LuLaptop, LuSmartphone, LuTablet } from "@qwikest/icons/lucide";
+import { LuLaptop, LuSmartphone } from "@qwikest/icons/lucide";
 import { Button } from "~/components/ui";
 import PortadaImg from "~/media/portada.jpeg?jsx";
 import Person1Img from "~/media/testimonios/person1.jpeg?jsx";
 import Person2Img from "~/media/testimonios/person2.jpeg?jsx";
 import Person3Img from "~/media/testimonios/person3.jpeg?jsx";
+import JuanImg from "~/media/personal/juan.webp?jsx";
 
 export default component$(() => {
   return (
@@ -37,14 +38,24 @@ export default component$(() => {
       <section class="py-16 bg-white fade-in" style={{animationDelay: '0.2s'}}>
         <div class="container mx-auto px-4 max-w-3xl">
           <h2 class="font-playfair text-3xl md:text-4xl font-bold mb-6 text-center scale-hover">Sobre Juan J. D. Antilef</h2>
-          <p class="text-lg text-muted-foreground mb-4 text-center fade-in">Nacido en Ezeiza, Buenos Aires. Profesor de arte, artista visual y músico. Más de 30 exposiciones colectivas e individuales. Obras que conjugan pintura, dibujo y escultura, con la madera como soporte recurrente, evocando su infancia.</p>
-          <div class="flex flex-wrap justify-center gap-4 text-center text-muted-foreground fade-in">
-            <span>🎨 Artista</span>
-            <span>🌍 Talleres de Acuarelas Online</span>
-            <span>🖼 Venta de Obras</span>
-            <span>
-              <a href="https://www.youtube.com/results?search_query=juan+antilef" target="_blank" class="underline hover:text-primary transition-colors">YouTube JUAN ANTILEF</a>
-            </span>
+          <div class="flex flex-col md:flex-row items-center gap-8 mb-6">
+            <div>
+              <JuanImg />
+            </div>
+            <div>
+              <p class="text-lg text-muted-foreground mb-4 text-center md:text-left fade-in">Nacido en Ezeiza, Buenos Aires. Profesor de arte, artista visual y músico. Más de 30 exposiciones colectivas e individuales. Obras que conjugan pintura, dibujo y escultura, con la madera como soporte recurrente, evocando su infancia.</p>
+              <div class="flex flex-wrap justify-center md:justify-start gap-4 text-center text-muted-foreground fade-in">
+                <span>🎨 Artista</span>
+                <span>🌍 Talleres de Acuarelas Online</span>
+                <span>🖼 Venta de Obras</span>
+                <span>
+                  <a href="https://www.youtube.com/results?search_query=juan+antilef" target="_blank" class="underline hover:text-primary transition-colors">YouTube JUAN ANTILEF</a>
+                </span>
+              </div>
+              <Button class="mt-4">
+                Leer más sobre mí
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -78,6 +89,33 @@ export default component$(() => {
               <h3 class="font-playfair text-xl font-semibold mb-2">Obras y Proyectos</h3>
               <p class="text-muted-foreground">Desarrolla tu propio estilo y participa en proyectos artísticos guiados.</p>
             </div>
+            {/* Ítem extra 1 */}
+            <div class="bg-white rounded-3xl shadow-lg p-6 text-center scale-hover fade-in transition-all">
+              <div class="mb-4 mx-auto w-16 h-16 flex items-center justify-center rounded-full bg-accent/10 animate-pulse">
+                {/* SVG de pincelada */}
+                <svg width="32" height="32" fill="none" viewBox="0 0 24 24"><path d="M4 20c2-4 8-8 16-8" stroke="#22c55e" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+              <h3 class="font-playfair text-xl font-semibold mb-2">Color y Expresión</h3>
+              <p class="text-muted-foreground">Explora el uso expresivo del color para transmitir emociones en tus obras.</p>
+            </div>
+            {/* Ítem extra 2 */}
+            <div class="bg-white rounded-3xl shadow-lg p-6 text-center scale-hover fade-in transition-all">
+              <div class="mb-4 mx-auto w-16 h-16 flex items-center justify-center rounded-full bg-accent/10 animate-pulse">
+                {/* SVG de reloj */}
+                <svg width="32" height="32" fill="none" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/><path d="M12 6v6l4 2" stroke="#22c55e" stroke-width="2" stroke-linecap="round"/></svg>
+              </div>
+              <h3 class="font-playfair text-xl font-semibold mb-2">Gestión del Tiempo</h3>
+              <p class="text-muted-foreground">Aprende a organizar tu proceso creativo y aprovechar mejor tus sesiones de arte.</p>
+            </div>
+            {/* Ítem extra 3 */}
+            <div class="bg-white rounded-3xl shadow-lg p-6 text-center scale-hover fade-in transition-all">
+              <div class="mb-4 mx-auto w-16 h-16 flex items-center justify-center rounded-full bg-accent/10 animate-pulse">
+                {/* SVG de comunidad */}
+                <svg width="32" height="32" fill="none" viewBox="0 0 24 24"><circle cx="8" cy="12" r="3" stroke="#22c55e" stroke-width="2"/><circle cx="16" cy="12" r="3" stroke="#22c55e" stroke-width="2"/><path d="M2 20c0-2.2 3.6-4 8-4s8 1.8 8 4" stroke="#22c55e" stroke-width="2"/></svg>
+              </div>
+              <h3 class="font-playfair text-xl font-semibold mb-2">Comunidad Artística</h3>
+              <p class="text-muted-foreground">Conecta con otros artistas, comparte tus avances y recibe retroalimentación.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -91,9 +129,6 @@ export default component$(() => {
             <div class="flex justify-center gap-4">
               <div class="w-20 h-20 flex items-center justify-center scale-hover">
                 <LuLaptop style={{ height: "300px", width: "300px" }} />
-              </div>
-              <div class="w-20 h-20 flex items-center justify-center scale-hover">
-                <LuTablet style={{ height: "300px", width: "300px" }} />
               </div>
               <div class="w-20 h-20 flex items-center justify-center scale-hover">
                 <LuSmartphone style={{ height: "300px", width: "300px" }} />
